@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unito.prog3.fmail.client.HomeController">
+  <tabs>
+    <Tab fx:id="receivedTab" text="Posta in Arrivo">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <ButtonBar layoutY="-5.0" prefHeight="38.0" prefWidth="163.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="5.0">
+                    <buttons>
+                      <Button mnemonicParsing="false" onAction="#SendPageButton" text="Scrivi" />
+                        <Button mnemonicParsing="false" onAction="#updateButton" text="Aggiorna" />
+                    </buttons>
+                  </ButtonBar>
+                   <TextField fx:id="account_name_text" editable="false" layoutY="4.0" AnchorPane.leftAnchor="6.0" />
+                  <ListView fx:id="ListView_rcvd" layoutX="8.0" layoutY="86.0" minHeight="400.0" minWidth="400.0" prefHeight="200.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="sentTab" text="Posta Inviata">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <ButtonBar prefHeight="33.0" prefWidth="600.0" AnchorPane.rightAnchor="5.0">
+                     <buttons>
+                        <Button mnemonicParsing="false" onAction="#updateButton" text="Aggiorna" />
+                     </buttons>
+                  </ButtonBar>
+                  <ListView fx:id="ListView_sent" prefHeight="200.0" prefWidth="392.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="delTab" text="Posta Eliminata">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ButtonBar prefHeight="33.0" prefWidth="600.0" AnchorPane.rightAnchor="5.0">
+                     <buttons>
+                        <Button mnemonicParsing="false" onAction="#updateButton" text="Aggiorna" />
+                        <Button mnemonicParsing="false" onAction="#deleteButton" text="Elimina definitivamente" />
+                     </buttons>
+                  </ButtonBar>
+                  <ListView fx:id="ListView_del" prefHeight="200.0" prefWidth="392.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

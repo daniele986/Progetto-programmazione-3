@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unito.prog3.fmail.client.ViewPageSentController">
+   <children>
+      <TextArea fx:id="email_text" editable="false" layoutX="113.0" layoutY="130.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0" />
+      <Button layoutX="500.0" layoutY="19.0" minWidth="38.0" mnemonicParsing="false" onAction="#DeleteButtonSent" prefHeight="32.0" prefWidth="86.0" text="Elimina" AnchorPane.rightAnchor="14.0" />
+      <Text fx:id="from_text" layoutX="50.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="211.0" AnchorPane.bottomAnchor="378.0" AnchorPane.topAnchor="5.0" />
+      <Text fx:id="to_text" layoutX="290.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="204.0" AnchorPane.bottomAnchor="378.0" AnchorPane.topAnchor="5.0" />
+      <Text fx:id="object_text" layoutX="72.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="257.0" AnchorPane.bottomAnchor="378.0" AnchorPane.topAnchor="42.05078125" />
+      <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From:" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="556.0" />
+      <Text layoutX="268.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To:" AnchorPane.leftAnchor="268.0" AnchorPane.rightAnchor="316.080078125" AnchorPane.topAnchor="5.0" />
+      <Text layoutX="14.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Object:" wrappingWidth="47.494140625" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="538.505859375" AnchorPane.topAnchor="42.0" />
+   </children>
+</AnchorPane>

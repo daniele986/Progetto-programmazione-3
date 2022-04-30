@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unito.prog3.fmail.client.SendPageController">
+   <children>
+      <ButtonBar layoutX="410.0" layoutY="14.0" prefHeight="40.0" prefWidth="0.0" AnchorPane.rightAnchor="10.0">
+        <buttons>
+            <Button mnemonicParsing="false" onAction="#SendmailButton" prefHeight="25.0" prefWidth="111.0" text="Invia" />
+        </buttons>
+      </ButtonBar>
+      <TextField fx:id="recipient_sendpage" layoutX="14.0" layoutY="30.0" prefHeight="25.0" prefWidth="220.0" AnchorPane.leftAnchor="10.0" />
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinatario/i" AnchorPane.leftAnchor="10.0" />
+      <TextField fx:id="object_sendpage" layoutX="244.0" layoutY="30.0" prefHeight="25.0" prefWidth="186.0" />
+      <Text layoutX="244.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oggetto" />
+      <TextArea fx:id="area_sendpage" layoutX="10.0" layoutY="64.0" prefHeight="334.0" prefWidth="578.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="64.0" />
+   </children>
+</AnchorPane>
